@@ -1,0 +1,653 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5C4E49D021252A3A006962C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4E49CF21252A3A006962C6 /* AppDelegate.swift */; };
+		5C4E49D221252A3A006962C6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4E49D121252A3A006962C6 /* ViewController.swift */; };
+		5C4E49D521252A3A006962C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C4E49D321252A3A006962C6 /* Main.storyboard */; };
+		5C4E49DA21252A40006962C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C4E49D921252A40006962C6 /* Assets.xcassets */; };
+		5C4E49DD21252A40006962C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C4E49DB21252A40006962C6 /* LaunchScreen.storyboard */; };
+		5C4E49E821252A41006962C6 /* speechEmotionRecognitionAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4E49E721252A41006962C6 /* speechEmotionRecognitionAppTests.swift */; };
+		5C4E49F321252A41006962C6 /* speechEmotionRecognitionAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4E49F221252A41006962C6 /* speechEmotionRecognitionAppUITests.swift */; };
+		5C4E4A0121252D1F006962C6 /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4E4A0021252D1F006962C6 /* MainNavigationController.swift */; };
+		5C4E4A032125B57C006962C6 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4E4A022125B57C006962C6 /* ResultsViewController.swift */; };
+		5C4E4A072125BAB5006962C6 /* AnalyzedResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4E4A062125BAB5006962C6 /* AnalyzedResults.swift */; };
+		5C4E4A092125D627006962C6 /* SpeechToText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4E4A082125D627006962C6 /* SpeechToText.swift */; };
+		5C4E4A0F21288044006962C6 /* Recording.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4E4A0E21288044006962C6 /* Recording.swift */; };
+		5C98DCDE2205F03A00F8701E /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C98DCDD2205F03A00F8701E /* CustomButton.swift */; };
+		F3A40E7B212A5CDD008BDE6B /* tfidf_svm.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A40E7A212A5CDD008BDE6B /* tfidf_svm.swift */; };
+		F3A40E7D212A5E24008BDE6B /* tfidf_svm_crowdflower.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = F3A40E7C212A5E24008BDE6B /* tfidf_svm_crowdflower.mlmodel */; };
+		F3A40E7F212A6332008BDE6B /* words_idf.json in Resources */ = {isa = PBXBuildFile; fileRef = F3A40E7E212A6332008BDE6B /* words_idf.json */; };
+		F3A40E81212A6BF9008BDE6B /* words_array.json in Resources */ = {isa = PBXBuildFile; fileRef = F3A40E80212A6BF8008BDE6B /* words_array.json */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5C4E49E421252A41006962C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5C4E49C421252A3A006962C6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5C4E49CB21252A3A006962C6;
+			remoteInfo = speechEmotionRecognitionApp;
+		};
+		5C4E49EF21252A41006962C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5C4E49C421252A3A006962C6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5C4E49CB21252A3A006962C6;
+			remoteInfo = speechEmotionRecognitionApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5C4E49CC21252A3A006962C6 /* speechEmotionRecognitionApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = speechEmotionRecognitionApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C4E49CF21252A3A006962C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5C4E49D121252A3A006962C6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5C4E49D421252A3A006962C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5C4E49D921252A40006962C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5C4E49DC21252A40006962C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5C4E49DE21252A41006962C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C4E49E321252A41006962C6 /* speechEmotionRecognitionAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = speechEmotionRecognitionAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C4E49E721252A41006962C6 /* speechEmotionRecognitionAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = speechEmotionRecognitionAppTests.swift; sourceTree = "<group>"; };
+		5C4E49E921252A41006962C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C4E49EE21252A41006962C6 /* speechEmotionRecognitionAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = speechEmotionRecognitionAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C4E49F221252A41006962C6 /* speechEmotionRecognitionAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = speechEmotionRecognitionAppUITests.swift; sourceTree = "<group>"; };
+		5C4E49F421252A41006962C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C4E4A0021252D1F006962C6 /* MainNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
+		5C4E4A022125B57C006962C6 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		5C4E4A062125BAB5006962C6 /* AnalyzedResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyzedResults.swift; sourceTree = "<group>"; };
+		5C4E4A082125D627006962C6 /* SpeechToText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechToText.swift; sourceTree = "<group>"; };
+		5C4E4A0E21288044006962C6 /* Recording.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recording.swift; sourceTree = "<group>"; };
+		5C98DCDD2205F03A00F8701E /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		F3A40E7A212A5CDD008BDE6B /* tfidf_svm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tfidf_svm.swift; sourceTree = "<group>"; };
+		F3A40E7C212A5E24008BDE6B /* tfidf_svm_crowdflower.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = tfidf_svm_crowdflower.mlmodel; sourceTree = "<group>"; };
+		F3A40E7E212A6332008BDE6B /* words_idf.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = words_idf.json; sourceTree = "<group>"; };
+		F3A40E80212A6BF8008BDE6B /* words_array.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = words_array.json; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5C4E49C921252A3A006962C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C4E49E021252A41006962C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C4E49EB21252A41006962C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5C4E49C321252A3A006962C6 = {
+			isa = PBXGroup;
+			children = (
+				5C4E49CE21252A3A006962C6 /* speechEmotionRecognitionApp */,
+				5C4E49E621252A41006962C6 /* speechEmotionRecognitionAppTests */,
+				5C4E49F121252A41006962C6 /* speechEmotionRecognitionAppUITests */,
+				5C4E49CD21252A3A006962C6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5C4E49CD21252A3A006962C6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5C4E49CC21252A3A006962C6 /* speechEmotionRecognitionApp.app */,
+				5C4E49E321252A41006962C6 /* speechEmotionRecognitionAppTests.xctest */,
+				5C4E49EE21252A41006962C6 /* speechEmotionRecognitionAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5C4E49CE21252A3A006962C6 /* speechEmotionRecognitionApp */ = {
+			isa = PBXGroup;
+			children = (
+				5C98DCDB2205EFF500F8701E /* Views */,
+				5C4E4A052125BA64006962C6 /* Models */,
+				5C4E4A042125BA56006962C6 /* Controllers */,
+				5C4E49CF21252A3A006962C6 /* AppDelegate.swift */,
+				5C4E49D921252A40006962C6 /* Assets.xcassets */,
+				5C4E49DE21252A41006962C6 /* Info.plist */,
+			);
+			path = speechEmotionRecognitionApp;
+			sourceTree = "<group>";
+		};
+		5C4E49E621252A41006962C6 /* speechEmotionRecognitionAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				5C4E49E721252A41006962C6 /* speechEmotionRecognitionAppTests.swift */,
+				5C4E49E921252A41006962C6 /* Info.plist */,
+			);
+			path = speechEmotionRecognitionAppTests;
+			sourceTree = "<group>";
+		};
+		5C4E49F121252A41006962C6 /* speechEmotionRecognitionAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5C4E49F221252A41006962C6 /* speechEmotionRecognitionAppUITests.swift */,
+				5C4E49F421252A41006962C6 /* Info.plist */,
+			);
+			path = speechEmotionRecognitionAppUITests;
+			sourceTree = "<group>";
+		};
+		5C4E4A042125BA56006962C6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5C4E4A0021252D1F006962C6 /* MainNavigationController.swift */,
+				5C4E4A022125B57C006962C6 /* ResultsViewController.swift */,
+				5C4E49D121252A3A006962C6 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		5C4E4A052125BA64006962C6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F3A40E80212A6BF8008BDE6B /* words_array.json */,
+				F3A40E7E212A6332008BDE6B /* words_idf.json */,
+				F3A40E7C212A5E24008BDE6B /* tfidf_svm_crowdflower.mlmodel */,
+				F3A40E7A212A5CDD008BDE6B /* tfidf_svm.swift */,
+				5C4E4A062125BAB5006962C6 /* AnalyzedResults.swift */,
+				5C4E4A082125D627006962C6 /* SpeechToText.swift */,
+				5C4E4A0E21288044006962C6 /* Recording.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5C98DCDB2205EFF500F8701E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5C4E49DB21252A40006962C6 /* LaunchScreen.storyboard */,
+				5C4E49D321252A3A006962C6 /* Main.storyboard */,
+				5C98DCDD2205F03A00F8701E /* CustomButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5C4E49CB21252A3A006962C6 /* speechEmotionRecognitionApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C4E49F721252A41006962C6 /* Build configuration list for PBXNativeTarget "speechEmotionRecognitionApp" */;
+			buildPhases = (
+				5C4E49C821252A3A006962C6 /* Sources */,
+				5C4E49C921252A3A006962C6 /* Frameworks */,
+				5C4E49CA21252A3A006962C6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = speechEmotionRecognitionApp;
+			productName = speechEmotionRecognitionApp;
+			productReference = 5C4E49CC21252A3A006962C6 /* speechEmotionRecognitionApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5C4E49E221252A41006962C6 /* speechEmotionRecognitionAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C4E49FA21252A41006962C6 /* Build configuration list for PBXNativeTarget "speechEmotionRecognitionAppTests" */;
+			buildPhases = (
+				5C4E49DF21252A41006962C6 /* Sources */,
+				5C4E49E021252A41006962C6 /* Frameworks */,
+				5C4E49E121252A41006962C6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5C4E49E521252A41006962C6 /* PBXTargetDependency */,
+			);
+			name = speechEmotionRecognitionAppTests;
+			productName = speechEmotionRecognitionAppTests;
+			productReference = 5C4E49E321252A41006962C6 /* speechEmotionRecognitionAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5C4E49ED21252A41006962C6 /* speechEmotionRecognitionAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C4E49FD21252A41006962C6 /* Build configuration list for PBXNativeTarget "speechEmotionRecognitionAppUITests" */;
+			buildPhases = (
+				5C4E49EA21252A41006962C6 /* Sources */,
+				5C4E49EB21252A41006962C6 /* Frameworks */,
+				5C4E49EC21252A41006962C6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5C4E49F021252A41006962C6 /* PBXTargetDependency */,
+			);
+			name = speechEmotionRecognitionAppUITests;
+			productName = speechEmotionRecognitionAppUITests;
+			productReference = 5C4E49EE21252A41006962C6 /* speechEmotionRecognitionAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5C4E49C421252A3A006962C6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Simran Dhillon";
+				TargetAttributes = {
+					5C4E49CB21252A3A006962C6 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					5C4E49E221252A41006962C6 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 5C4E49CB21252A3A006962C6;
+					};
+					5C4E49ED21252A41006962C6 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 5C4E49CB21252A3A006962C6;
+					};
+				};
+			};
+			buildConfigurationList = 5C4E49C721252A3A006962C6 /* Build configuration list for PBXProject "speechEmotionRecognitionApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5C4E49C321252A3A006962C6;
+			productRefGroup = 5C4E49CD21252A3A006962C6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5C4E49CB21252A3A006962C6 /* speechEmotionRecognitionApp */,
+				5C4E49E221252A41006962C6 /* speechEmotionRecognitionAppTests */,
+				5C4E49ED21252A41006962C6 /* speechEmotionRecognitionAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5C4E49CA21252A3A006962C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3A40E7F212A6332008BDE6B /* words_idf.json in Resources */,
+				5C4E49DD21252A40006962C6 /* LaunchScreen.storyboard in Resources */,
+				F3A40E81212A6BF9008BDE6B /* words_array.json in Resources */,
+				5C4E49DA21252A40006962C6 /* Assets.xcassets in Resources */,
+				5C4E49D521252A3A006962C6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C4E49E121252A41006962C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C4E49EC21252A41006962C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5C4E49C821252A3A006962C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C4E4A032125B57C006962C6 /* ResultsViewController.swift in Sources */,
+				5C4E49D221252A3A006962C6 /* ViewController.swift in Sources */,
+				5C4E4A0121252D1F006962C6 /* MainNavigationController.swift in Sources */,
+				F3A40E7B212A5CDD008BDE6B /* tfidf_svm.swift in Sources */,
+				5C4E4A092125D627006962C6 /* SpeechToText.swift in Sources */,
+				F3A40E7D212A5E24008BDE6B /* tfidf_svm_crowdflower.mlmodel in Sources */,
+				5C98DCDE2205F03A00F8701E /* CustomButton.swift in Sources */,
+				5C4E4A072125BAB5006962C6 /* AnalyzedResults.swift in Sources */,
+				5C4E49D021252A3A006962C6 /* AppDelegate.swift in Sources */,
+				5C4E4A0F21288044006962C6 /* Recording.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C4E49DF21252A41006962C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C4E49E821252A41006962C6 /* speechEmotionRecognitionAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C4E49EA21252A41006962C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C4E49F321252A41006962C6 /* speechEmotionRecognitionAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5C4E49E521252A41006962C6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5C4E49CB21252A3A006962C6 /* speechEmotionRecognitionApp */;
+			targetProxy = 5C4E49E421252A41006962C6 /* PBXContainerItemProxy */;
+		};
+		5C4E49F021252A41006962C6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5C4E49CB21252A3A006962C6 /* speechEmotionRecognitionApp */;
+			targetProxy = 5C4E49EF21252A41006962C6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5C4E49D321252A3A006962C6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5C4E49D421252A3A006962C6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5C4E49DB21252A40006962C6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5C4E49DC21252A40006962C6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5C4E49F521252A41006962C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5C4E49F621252A41006962C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5C4E49F821252A41006962C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 376BJX87UD;
+				INFOPLIST_FILE = speechEmotionRecognitionApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SimranDhillon.speechEmotionRecognitionApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5C4E49F921252A41006962C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 376BJX87UD;
+				INFOPLIST_FILE = speechEmotionRecognitionApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SimranDhillon.speechEmotionRecognitionApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5C4E49FB21252A41006962C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 376BJX87UD;
+				INFOPLIST_FILE = speechEmotionRecognitionAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SimranDhillon.speechEmotionRecognitionAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/speechEmotionRecognitionApp.app/speechEmotionRecognitionApp";
+			};
+			name = Debug;
+		};
+		5C4E49FC21252A41006962C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 376BJX87UD;
+				INFOPLIST_FILE = speechEmotionRecognitionAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SimranDhillon.speechEmotionRecognitionAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/speechEmotionRecognitionApp.app/speechEmotionRecognitionApp";
+			};
+			name = Release;
+		};
+		5C4E49FE21252A41006962C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 376BJX87UD;
+				INFOPLIST_FILE = speechEmotionRecognitionAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SimranDhillon.speechEmotionRecognitionAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = speechEmotionRecognitionApp;
+			};
+			name = Debug;
+		};
+		5C4E49FF21252A41006962C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 376BJX87UD;
+				INFOPLIST_FILE = speechEmotionRecognitionAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SimranDhillon.speechEmotionRecognitionAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = speechEmotionRecognitionApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5C4E49C721252A3A006962C6 /* Build configuration list for PBXProject "speechEmotionRecognitionApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C4E49F521252A41006962C6 /* Debug */,
+				5C4E49F621252A41006962C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5C4E49F721252A41006962C6 /* Build configuration list for PBXNativeTarget "speechEmotionRecognitionApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C4E49F821252A41006962C6 /* Debug */,
+				5C4E49F921252A41006962C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5C4E49FA21252A41006962C6 /* Build configuration list for PBXNativeTarget "speechEmotionRecognitionAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C4E49FB21252A41006962C6 /* Debug */,
+				5C4E49FC21252A41006962C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5C4E49FD21252A41006962C6 /* Build configuration list for PBXNativeTarget "speechEmotionRecognitionAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C4E49FE21252A41006962C6 /* Debug */,
+				5C4E49FF21252A41006962C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5C4E49C421252A3A006962C6 /* Project object */;
+}
