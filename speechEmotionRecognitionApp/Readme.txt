@@ -28,16 +28,12 @@ Speech from the phone mic into text, and then this text is classified by a suppo
 
 2. App Architecture
 
-	The application uses a MVC architecture. There are three models and three controllers. The main controller (ViewController.swift) allows the user to start and stop his or her recording. The second controller (ResultsViewController.swift) is responsible for passing the analyzed results from one of the models. Lastly, the third controller (MainNavigationController.swift) is used by iOS to implement navigation between two controllers. 
-There are three models- one for recording the text (Recording.swift), a second for speech to transcription from mp3 clips (SpeechToText.swift), and a third for classifying the text based on emotion categories.
+	The application uses a MVC architecture. There are three models and three controllers. The main controller (ViewController.swift) allows the user to start and stop his or her recording, and to start text analysis. The second controller (ResultsViewController.swift) is responsible for passing the analyzed results from  the AnalyzedResults model. Lastly, the third controller (MainNavigationController.swift) is used to managed navigation between the other two controllers. 
+There are three models- one for recording the text (Recording.swift), a second for speech to transcription from mp3 clips (SpeechToText.swift), and a third for classifying the text based on emotion categories (AnalyzedResults.swift).
 
 3. SVM classifier
 
-	The training data for the SVM classifier is the CrowdFlower/Figure 8 Sentiment Analysis: Emotion in Text dataset (link: https://www.figure-eight.com/data-for-everyone/). This dataset contains 10,000 tweets that are labeled with a corresponding emotion/sentiment. There are 13 emotion categories. 
-
-	The crowd flower dataset undergoes feature engineering via tf-idf. 
-
-The model is implemented in python using the scikit-learn library. Once it is trained, it is converted into a CoreML model which is imported into the iOS application. 
+	The training data for the SVM classifier is the CrowdFlower/Figure 8 Sentiment Analysis: Emotion in Text dataset (link: https://www.figure-eight.com/data-for-everyone/). This dataset contains 10,000 tweets that are labeled with a corresponding emotion/sentiment. There are 13 emotion categories. The crowd flower dataset undergoes feature engineering via tf-idf. The model is implemented in python using the scikit-learn library. Once it is trained, it is converted into a CoreML model which is imported into the iOS application. 
 
 The CoreML model is fed an input of user transcribed text that has its features extracted via tf-idf.
 

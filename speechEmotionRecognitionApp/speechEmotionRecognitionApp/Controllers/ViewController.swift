@@ -21,8 +21,6 @@ class ViewController: UIViewController  {
     @IBOutlet weak var recordButton: UIButton!
     //stopRecordButton is used to stop user recording
     @IBOutlet weak var stopRecordButton: UIButton!
-    //displays the status of user recording, i.e. recording either finished or not
-    @IBOutlet weak var recordingStatusLabel: UILabel!
     //textbox to show what user is currently recording
     @IBOutlet weak var userRecordedText: UITextView!
     
@@ -107,13 +105,11 @@ class ViewController: UIViewController  {
     }
     
     @objc func changeRecordingToBusy(){
-        //recordingStatusLabel.text = "Recording User"
         userRecordedText.text = currentRecording.userTranscription
         print("Recording now")
     }
     
     @objc func changeRecordingToDone() {
-        //recordingStatusLabel.text = "Recording Done"
         print("Recording Finished")
     }
     

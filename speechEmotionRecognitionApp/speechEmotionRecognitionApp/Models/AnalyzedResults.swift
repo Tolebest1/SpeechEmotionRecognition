@@ -4,7 +4,7 @@
 //  Copyright © 2018 Simran Dhillon. All rights reserved.
 //
 
-//analyzedResults is generated after a prerecorded audio file or recorded speech is analyzed for sentiment
+//analyzedResults is used after a prerecorded audio file or recorded speech is analyzed for sentiment
 //This class contains transcribed text and classification results
 
 import Foundation

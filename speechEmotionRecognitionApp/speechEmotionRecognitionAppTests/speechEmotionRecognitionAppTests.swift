@@ -51,7 +51,8 @@ class speechEmotionRecognitionAppTests: XCTestCase {
             print("some error")
         }
         let analysis = results.analysisResults
-        print(analysis)
+        print("Sentiment for transcribed text:: "+results.sentiment)
+        XCTAssert(results.sentiment == "happiness")
     }
     
     func testSadStatement() {
@@ -63,7 +64,8 @@ class speechEmotionRecognitionAppTests: XCTestCase {
             print("some error")
         }
         let analysis = results.analysisResults
-        print(analysis)
+        print("Sentiment for transcribed text:: "+results.sentiment)
+        XCTAssert(results.sentiment == "sadness")
     }
     
     func testNeutralStatement() {
@@ -75,7 +77,8 @@ class speechEmotionRecognitionAppTests: XCTestCase {
             print("some error")
         }
         let analysis = results.analysisResults
-        print(analysis)
+        print("Sentiment for transcribed text:: "+results.sentiment)
+        XCTAssert(results.sentiment == "worry")
     }
     
 }
